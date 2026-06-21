@@ -6,19 +6,19 @@
     font-family: "Microsoft YaHei", sans-serif;
 }
 
-/* 全局改为浅蓝色背景，文字改为深色保证看清 */
+/* 全局改为浅粉色背景，深色文字适配 */
 body {
-    background-color: #e8f4ff;
-    color: #ffe8e8;
+    background-color: #fff0f6;
+    color: #222222;
     line-height: 1.7;
 }
 a {
-    color: #d1e5ff;
+    color: #b83b72;
     text-decoration: none;
     font-size: 14px;
 }
 a:hover {
-    color: #ceeaff;
+    color: #e0488c;
 }
 
 /* 顶部导航 右上角布局 */
@@ -32,27 +32,27 @@ a:hover {
     margin-left: 22px;
 }
 
-/* 头部渐变横幅，适配浅蓝页面 */
+/* 头部横幅浅粉渐变 */
 .hero-banner {
     width: 920px;
     margin: 0 auto 40px;
-    background: linear-gradient(135deg, #55616c, #597387);
+    background: linear-gradient(135deg, #ffd6e4, #ffc8da);
     border-radius: 6px;
     padding: 40px 20px;
     text-align: center;
 }
 .hero-text h1 {
-    color: #59aaff;
+    color: #a12b5f;
     font-size: 24px;
     margin-bottom: 8px;
 }
 .sub-title {
     font-size: 14px;
-    color: #536071;
+    color: #681f42;
 }
 .direction {
     font-size: 13px;
-    color: #a0c7ff;
+    color: #8c305c;
 }
 
 /* 主体内容容器 固定宽度居中 */
@@ -64,16 +64,16 @@ a:hover {
 .block {
     margin-bottom: 45px;
 }
-/* 板块标题：深蓝色 */
+/* 板块标题深粉色 */
 .block-title {
-    color: #89c6ff;
+    color: #a12b5f;
     font-size: 19px;
     margin-bottom: 16px;
 }
 .text-content p {
     font-size: 14px;
     margin-bottom: 8px;
-    color: #167eff;
+    color: #333333;
 }
 
 /* 技术栈进度条样式 */
@@ -90,12 +90,12 @@ a:hover {
 .skill-name {
     width: 100px;
     font-size: 14px;
-    color: #004fb8;
+    color: #222222;
 }
 .bar-bg {
     flex: 1;
     height: 8px;
-    background-color: #c2e5ff;
+    background-color: #ffe1ec;
     border-radius: 4px;
     overflow: hidden;
 }
@@ -105,51 +105,51 @@ a:hover {
 }
 .bar-fill.java {
     width: 85%;
-    background-color: #4a7ba1;
+    background-color: #36a8ff;
 }
 .bar-fill.mysql {
     width: 80%;
-    background-color: #ba4776;
+    background-color: #ff4878;
 }
 .bar-fill.jsp {
     width: 75%;
-    background-color: #7a7361;
+    background-color: #ffcc33;
 }
 .bar-fill.html {
     width: 70%;
-    background-color: #5aac83;
+    background-color: #36d987;
 }
 .bar-fill.tool {
     width: 78%;
-    background-color: #7000ff;
+    background-color: #b378ff;
 }
 
-/* 实习卡片改为浅蓝浅色卡片 */
+/* 实习卡片淡粉底色 */
 .card-list {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 .dark-card {
-    background-color: #d0e6fb;
+    background-color: #ffe6ef;
     border-radius: 6px;
     padding: 18px 22px;
 }
 .dark-card h3 {
-    color: #a3cdff;
+    color: #882652;
     font-size: 16px;
     margin-bottom: 6px;
 }
 .dark-card p {
     font-size: 14px;
-    color: #bfdaff;
+    color: #333333;
 }
 
 /* 荣誉列表 */
 .honor-list {
     padding-left: 20px;
     font-size: 14px;
-    color: #c1dbff;
+    color: #333333;
 }
 .honor-list li {
     margin-bottom: 6px;
@@ -159,7 +159,7 @@ a:hover {
 .contact-text p {
     font-size: 14px;
     margin-bottom: 6px;
-    color: #c9dfff;
+    color: #333333;
 }
 
 /* 底部版权 */
@@ -168,6 +168,6 @@ a:hover {
     padding: 25px 0;
     text-align: center;
     font-size: 13px;
-    color: #c2dcff;
-    border-top: 1px solid #c3def7;
+    color: #666666;
+    border-top: 1px solid #ffe1ec;
 }
