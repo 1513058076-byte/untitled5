@@ -9,16 +9,16 @@
 /* 全局改为浅蓝色背景，文字改为深色保证看清 */
 body {
     background-color: #e8f4ff;
-    color: #162a46;
+    color: #ffe8e8;
     line-height: 1.7;
 }
 a {
-    color: #20599c;
+    color: #d1e5ff;
     text-decoration: none;
     font-size: 14px;
 }
 a:hover {
-    color: #0080ff;
+    color: #ceeaff;
 }
 
 /* 顶部导航 右上角布局 */
