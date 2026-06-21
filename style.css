@@ -1,29 +1,32 @@
+/* 全局重置 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Microsoft YaHei", sans-serif;
+    font-family: "Microsoft Yahei", sans-serif;
 }
-
-/* 页面底色 与孟子奥页面统一浅灰白 */
+/* 原版浅灰白页面底色，无外层白色大卡片 */
 body {
     background-color: #f7f8fc;
-    padding: 30px 15px;
+    color: #333;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
-/* 顶部导航栏 复刻孟子奥深蓝色导航 */
+/* 顶部导航栏 原版深蓝色渐变 */
 .navbar {
     background: linear-gradient(90deg, #0f2b66, #1a408c);
     padding: 12px 0;
 }
 .nav-container {
-    width: 1000px;
+    width: 1080px;
     margin: 0 auto;
     text-align: center;
 }
 .nav-container a {
-    color: #ffffff;
-    text-decoration: none;
     margin: 0 14px;
     font-size: 14px;
 }
@@ -31,107 +34,81 @@ body {
     opacity: 0.8;
 }
 
-/* 简历外层白色卡片 */
-.resume-card {
-    width: 1000px;
-    margin: 0 auto;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(26, 64, 140, 0.1);
-    overflow: hidden;
-}
-
-/* 顶部标题深蓝渐变栏 */
-.resume-top-bar {
+/* 顶部横幅 原版通栏深蓝渐变，去掉头像布局，文字居中 */
+.banner {
     background: linear-gradient(90deg, #0f2b66, #1a408c);
+    padding: 45px 0;
+}
+.banner-container {
+    width: 1080px;
+    margin: 0 auto;
+    text-align: left;
+}
+.banner-text h1 {
     color: #fff;
-    text-align: center;
-    padding: 24px 0;
+    font-size: 34px;
+    margin-bottom: 6px;
 }
-.resume-top-bar h1 {
-    font-size: 26px;
-    letter-spacing: 2px;
-    font-weight: normal;
-}
-
-.wrapper {
-    padding: 0 40px;
-}
-
-/* 每个内容区块 */
-.resume-block {
-    padding: 24px 0;
-    border-bottom: 1px solid #dde3f0;
-}
-.resume-block:last-of-type {
-    border-bottom: none;
-}
-
-/* 区块标题：左侧蓝色竖线，无背景，和孟子奥完全一致 */
-.block-title {
+.major {
+    color: #e6edff;
     font-size: 18px;
-    font-weight: 500;
-    color: #1a408c;
-    border-left: 4px solid #1a408c;
-    padding: 4px 10px;
-    background-color: transparent;
-    border-radius: 0;
-    margin-bottom: 16px;
-    display: inline-block;
+    margin-bottom: 4px;
 }
-
-.block-content {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #333333;
-    padding-left: 14px;
-}
-
-/* 基础信息/联系信息行样式 */
-.info-line {
-    margin: 6px 0;
-}
-.info-label {
-    display: inline-block;
-    width: 110px;
-    color: #0f2b66;
-    font-weight: 500;
-}
-
-/* 实习经历白色卡片 复刻孟子奥项目卡片 */
-.project-card {
-    background: #fff;
-    border: 1px solid #e2e5ec;
-    border-radius: 6px;
-    padding: 14px 18px;
-}
-.project-card h3 {
-    font-size: 16px;
-    margin-bottom: 8px;
-}
-.project-card p {
+.desc {
+    color: #c9d6f2;
     font-size: 14px;
-    line-height: 1.7;
-    color: #333;
 }
 
-/* 技能网格布局 3列均分卡片 */
+/* 主体内容固定宽度居中 */
+.container {
+    width: 1080px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+.section {
+    margin-bottom: 40px;
+}
+/* 板块标题：纯蓝色文字，无左侧竖线、无背景，完全复刻原版 */
+.section-title {
+    color: #1a408c;
+    font-size: 20px;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+/* 技能3列网格卡片 原版圆角浅阴影样式 */
 .skill-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin-bottom: 16px;
+    gap: 18px;
 }
 .skill-card {
-    background: #fff;
-    border: 1px solid #e2e5ec;
-    border-radius: 6px;
-    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    padding: 12px;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
 }
-.skill-desc {
-    font-size: 14px;
-    color: #444;
-    line-height: 1.8;
+
+/* 实习/项目长条卡片 和原版项目卡片一致 */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.project-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    padding: 16px 20px;
+}
+.project-card h3 {
+    font-size: 16px;
+}
+
+/* 基础信息、联系文字行间距 */
+.section p {
+    font-size: 15px;
+    margin: 6px 0;
 }
