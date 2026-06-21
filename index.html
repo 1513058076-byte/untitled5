@@ -6,77 +6,108 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- 顶部导航栏 和原版完全一致 -->
-<nav class="navbar">
-    <div class="nav-container">
-        <a href="#home">首页</a>
-        <a href="#about">基础信息</a>
-        <a href="#skill">专业技能</a>
-        <a href="#project">实习经历</a>
-        <a href="#contact">联系我</a>
+<!-- 顶部导航栏 右上角横向菜单 -->
+<nav class="top-nav">
+    <div class="nav-right">
+        <a href="#about">关于我</a>
+        <a href="#skill">技术栈</a>
+        <a href="#intern">实习经历</a>
+        <a href="#info">荣誉</a>
+        <a href="#contact">联系</a>
     </div>
 </nav>
 
-<!-- 顶部深蓝横幅 去掉头像，只保留文字居中 -->
-<header class="banner" id="home">
-    <div class="banner-container">
-        <div class="banner-text">
-            <h1>鲁浩宇</h1>
-            <p class="major">软件工程专业学生 | Java Web后端开发方向</p>
-            <p class="desc">夯实编程基础，熟悉后端开发流程，努力成为优秀软件开发工程师</p>
-        </div>
+<!-- 头部横幅 -->
+<header class="hero-banner">
+    <div class="hero-text">
+        <h1>你好，我是鲁浩宇</h1>
+        <p class="sub-title">软件工程 · 2024级本科生</p>
+        <p class="direction">目标方向：Java Web后端开发</p>
     </div>
 </header>
 
-<!-- 页面主体容器 固定宽度居中，无外层白色卡片 -->
-<main class="container">
-    <!-- 基础信息（对应原版关于我） -->
-    <section id="about" class="section">
-        <h2 class="section-title">基础信息</h2>
-        <p>姓　　名：鲁浩宇</p>
-        <p>学　　号：202431329</p>
-    </section>
-
-    <!-- 专业技能 3列网格卡片 和原版技能样式一模一样 -->
-    <section id="skill" class="section">
-        <h2 class="section-title">专业技能</h2>
-        <div class="skill-grid">
-            <div class="skill-card">Java基础</div>
-            <div class="skill-card">Servlet/JSP</div>
-            <div class="skill-card">MySQL</div>
-            <div class="skill-card">HTML/CSS</div>
-            <div class="skill-card">IDEA/Tomcat</div>
-            <div class="skill-card">英语四级</div>
+<!-- 主体内容容器 -->
+<main class="main-wrap">
+    <!-- 关于我 -->
+    <section id="about" class="block">
+        <h2 class="block-title">关于我</h2>
+        <div class="text-content">
+            <p>我是一名软件工程专业大二学生，熟练掌握Java后端基础与Web开发相关技术，具备良好代码规范与团队协作能力，希望从事后端开发相关工作。</p>
+            <p>技术兴趣集中在Java Web、MySQL数据库、前端静态页面开发、企业级项目开发流程。</p>
         </div>
-        <p style="margin-top:12px;line-height:1.7;">
-            1、后端开发：熟练Java基础、面向对象、集合框架等核心知识点，掌握Servlet、JSP等Java Web技术，可独立搭建Web项目；<br>
-            2、数据库：熟悉MySQL增删改查语句，熟练使用Navicat进行数据表设计与管理；<br>
-            3、前端页面：掌握HTML、CSS，能够独立完成静态页面布局与样式美化；<br>
-            4、开发工具：熟练使用IDEA、Tomcat进行项目开发、部署与调试；<br>
-            5、语言证书：大学英语四级（CET-4）已通过，可读懂英文技术文档；<br>
-            6、综合素养：代码书写规范，逻辑思维清晰，适配后端开发岗位基础工作需求。
-        </p>
     </section>
 
-    <!-- 实习经历 长条白色卡片 和原版项目卡片样式统一 -->
-    <section id="project" class="section">
-        <h2 class="section-title">实习经历</h2>
-        <div class="project-list">
-            <div class="project-card">
-                <h3>苏州群策科技有限公司 | 后端开发实习生</h3>
-                <p style="font-size:14px;color:#444;margin-top:6px;">
-                    就职于苏州群策科技有限公司担任后端开发实习生，协助正式开发人员进行接口调试、基础业务数据维护，整理项目需求文档，参与功能模块测试与线上小bug修复，熟练使用MySQL完成日常数据查询与修改，完整体验企业软件开发流程，具备良好团队沟通协作意识。
-                </p>
+    <!-- 技术栈 进度条样式 完全复刻原图 -->
+    <section id="skill" class="block">
+        <h2 class="block-title">技术栈</h2>
+        <div class="skill-bar-list">
+            <div class="skill-item">
+                <span class="skill-name">Java</span>
+                <div class="bar-bg">
+                    <div class="bar-fill java"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">MySQL</span>
+                <div class="bar-bg">
+                    <div class="bar-fill mysql"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">Servlet / JSP</span>
+                <div class="bar-bg">
+                    <div class="bar-fill jsp"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">HTML / CSS</span>
+                <div class="bar-bg">
+                    <div class="bar-fill html"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">IDEA / Tomcat</span>
+                <div class="bar-bg">
+                    <div class="bar-fill tool"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 联系方式 对应原版底部联系模块 -->
-    <section id="contact" class="section">
-        <h2 class="section-title">联系我</h2>
-        <p>联系电话：15038774801</p>
-        <p>电子邮箱：1513058076@qq.com</p>
+    <!-- 实习经历 深色圆角卡片 -->
+    <section id="intern" class="block">
+        <h2 class="block-title">实习经历</h2>
+        <div class="card-list">
+            <div class="dark-card">
+                <h3>苏州群策科技有限公司 | 后端开发实习生</h3>
+                <p>协助正式开发人员进行接口调试、基础业务数据维护，整理项目需求文档，参与功能模块测试与线上小bug修复，熟练使用MySQL完成日常数据查询与修改，完整体验企业软件开发流程。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 个人荣誉 -->
+    <section id="info" class="block">
+        <h2 class="block-title">个人荣誉</h2>
+        <ul class="honor-list">
+            <li>大学英语四级（CET-4）已通过</li>
+            <li>课程项目多次完成数据库、Web系统完整开发</li>
+            <li>具备规范编码习惯，擅长需求文档梳理</li>
+        </ul>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="block">
+        <h2 class="block-title">联系我</h2>
+        <div class="contact-text">
+            <p>📞 电话：15038774801</p>
+            <p>✉ 邮箱：1513058076@qq.com</p>
+        </div>
     </section>
 </main>
+
+<!-- 底部版权 -->
+<footer class="footer">
+    <p>© 2026 鲁浩宇 - Personal Portfolio</p>
+</footer>
 </body>
 </html>
