@@ -1,0 +1,86 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" import="com.resume.entity.ResumeInfo" %>
+
+<%
+    ResumeInfo resume = new ResumeInfo();
+    resume.setName("鲁浩宇");
+    resume.setStudentId("202431329");
+    resume.setPhone("15038774801");
+    resume.setEmail("1513058076@qq.com");
+
+    // 单段实习经历：苏州群策科技有限公司
+    resume.setInternship("就职于苏州群策科技有限公司担任后端开发实习生，协助正式开发人员进行接口调试、基础业务数据维护，整理项目需求文档，参与功能模块测试与线上小bug修复，熟练使用MySQL完成日常数据查询与修改，完整体验企业软件开发流程，具备良好团队沟通协作意识。");
+
+    // 字符串+拼接，消除Java换行语法报错
+    resume.setSkills("1、后端开发：熟练Java基础、面向对象、集合框架等核心知识点，掌握Servlet、JSP等Java Web技术，可独立搭建Web项目；"
+            + "2、数据库：熟悉MySQL增删改查语句，熟练使用Navicat进行数据表设计与管理；"
+            + "3、前端页面：掌握HTML、CSS，能够独立完成静态页面布局与样式美化；"
+            + "4、开发工具：熟练使用IDEA、Tomcat进行项目开发、部署与调试；"
+            + "5、语言证书：大学英语四级（CET-4）已通过，可读懂英文技术文档；"
+            + "6、综合素养：代码书写规范，逻辑思维清晰，适配后端开发岗位基础工作需求。");
+
+    pageContext.setAttribute("resData", resume);
+%>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>鲁浩宇 - 个人电子简历</title>
+    <%-- 完整CSS路径，自动适配项目上下文，消除路径报错 --%>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="resume-card">
+    <div class="resume-top-bar">
+        <h1>个人电子简历</h1>
+    </div>
+
+    <div class="wrapper">
+        <!-- 模块1：姓名 -->
+        <div class="resume-block">
+            <div class="block-title">姓　　名</div>
+            <div class="block-content">
+                ${resData.name}
+            </div>
+        </div>
+
+        <!-- 模块2：学号 -->
+        <div class="resume-block">
+            <div class="block-title">学　　号</div>
+            <div class="block-content">
+                ${resData.studentId}
+            </div>
+        </div>
+
+        <!-- 模块3：联系方式 & 邮箱 -->
+        <div class="resume-block">
+            <div class="block-title">联系信息</div>
+            <div class="block-content">
+                <div class="info-line">
+                    <span class="info-label">联系电话：</span>${resData.phone}
+                </div>
+                <div class="info-line">
+                    <span class="info-label">电子邮箱：</span>${resData.email}
+                </div>
+            </div>
+        </div>
+
+        <!-- 模块4：实习经历 -->
+        <div class="resume-block">
+            <div class="block-title">实习经历</div>
+            <div class="block-content">
+                ${resData.internship}
+            </div>
+        </div>
+
+        <!-- 模块5：个人技能 -->
+        <div class="resume-block">
+            <div class="block-title">个人专业技能</div>
+            <div class="block-content" style="white-space: pre-line;">
+                ${resData.skills}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
